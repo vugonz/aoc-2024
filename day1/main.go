@@ -74,7 +74,6 @@ func second() int {
 		occurs[v]++
 	}
 
-	fmt.Println(occurs)
 	r := 0
 	for _, v := range left {
 		if occurs, exists := occurs[v]; exists {
