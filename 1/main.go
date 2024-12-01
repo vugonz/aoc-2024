@@ -89,5 +89,6 @@ func second() int {
 }
 
 func main() {
-	fmt.Println(first(), second())
+	fmt.Println(first())
+	fmt.Println(second())
 }
