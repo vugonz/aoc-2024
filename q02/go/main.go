@@ -155,5 +155,5 @@ func partOne() int {
 }
 
 func main() {
-	fmt.Println(partOne(), partTwo(), partTwoParallel())
+	fmt.Println(partOne(), partTwo())
 }
