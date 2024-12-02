@@ -18,7 +18,7 @@ func insertSorted(arr []int, item int) []int {
 	return arr
 }
 
-func first() int {
+func partOne() int {
 	f, err := os.OpenFile("input.txt", os.O_RDONLY, 0644)
 	if err != nil {
 		panic(err)
@@ -27,7 +27,6 @@ func first() int {
 
 	first := make([]int, 0)
 	second := make([]int, 0)
-
 	scan := bufio.NewScanner(f)
 	scan.Split(bufio.ScanLines)
 	for scan.Scan() {
@@ -50,7 +49,7 @@ func first() int {
 	return int(r)
 }
 
-func second() int {
+func partTwo() int {
 	f, err := os.OpenFile("input.txt", os.O_RDONLY, 0644)
 	if err != nil {
 		panic(err)
@@ -89,6 +88,5 @@ func second() int {
 }
 
 func main() {
-	fmt.Println(first())
-	fmt.Println(second())
+	fmt.Println(partOne(), partTwo())
 }
