@@ -4,7 +4,7 @@ from typing import Tuple
 INPUT_TXT = os.path.join(os.path.dirname(__file__), "../input.txt")
 
 
-def solve():
+def solve(second: bool = False) -> int:
     data = open(INPUT_TXT, "r").read()
 
     def check_num(i) -> Tuple[int, int]:
@@ -30,7 +30,7 @@ def solve():
 
     def match_mul_expr(i) -> int:
         while True:
-            i = toggle(i)  # comment this out for part 1 solution
+            i = toggle(i)
             valid, i = check_keyword("mul(", i)
             if not valid:
                 i += 1
@@ -56,6 +56,9 @@ def solve():
             enabled = not enabled
         return i
 
+    if not second:
+        toggle = lambda x: x  # noqa: E731
+
     r = 0
     i = 0
     enabled = True
@@ -71,4 +74,4 @@ def solve():
 
 
 if __name__ == "__main__":
-    print(solve())
+    print(solve(), solve(second=True))
