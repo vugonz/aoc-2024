@@ -4,8 +4,8 @@
 |   1 | ★★ | Python, Go |
 |   2 | ★★ | Python, Go |
 |   3 | ★★ | Python |
-|   4 | |  |
-|   5 | |  |
+|   4 | ★★ | Python |
+|   5 | ★★ | Python |
 |   6 | |  |
 |   7 | |  |
 |   8 | |  |
